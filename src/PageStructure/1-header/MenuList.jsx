@@ -1,0 +1,39 @@
+import React from "react";
+
+import { Link } from "react-scroll";
+import Cta from "../../Cta";
+
+function MenuList({ pages, onClose }) {
+  return (
+    <div>
+      <ul className="flex flex-col justify-center items-center md:flex-row gap-10 ">
+        {pages.map((page, index) => (
+          <React.Fragment key={index}>
+            {index === pages.length - 1 ? (
+              <Cta
+                to={pages[pages.length - 1]}
+                onClick={onClose}
+                ctaText={page.charAt(0).toUpperCase() + page.slice(1)}
+              />
+            ) : (
+              <Link
+                to={page}
+                spy={true}
+                isDynamic={true}
+                smooth={true}
+                offset={index === 1 ? -300 : -100}
+                duration={1000}
+                onClick={onClose}
+                className="text-paragraphs cursor-pointer font-bold hover:text-primary focus:border-b"
+              >
+                {page.charAt(0).toUpperCase() + page.slice(1)}
+              </Link>
+            )}
+          </React.Fragment>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default MenuList;
