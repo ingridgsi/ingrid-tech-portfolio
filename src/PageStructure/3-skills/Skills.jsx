@@ -8,12 +8,12 @@ import Container from "../../Container";
 
 function Skills() {
   const skillsLogos = [
-    htmlLogo,
-    cssLogo,
-    tailwindLogo,
-    jsLogo,
-    reactLogo,
-    ghLogo,
+    { src: htmlLogo, alt: "HTML" },
+    { src: cssLogo, alt: "CSS" },
+    { src: tailwindLogo, alt: "Tailwind" },
+    { src: jsLogo, alt: "JavaScript" },
+    { src: reactLogo, alt: "React" },
+    { src: ghLogo, alt: "GitHub" },
   ];
 
   return (
@@ -24,11 +24,11 @@ function Skills() {
           Tech Stack
         </h2>
         <ul className="flex gap-5 items-center justify-between py-16 px-8">
-          {skillsLogos.map((logo) => (
-            <li key={logo.index}>
+          {skillsLogos.map((logo, index) => (
+            <li key={index}>
               <img
-                src={logo}
-                alt={logo}
+                src={logo.src}
+                alt={logo.alt}
                 width="58px"
                 height="58px"
                 className="hover:translate-y-[-8px] transition-all duration-300 ease-in-out cursor-pointer"

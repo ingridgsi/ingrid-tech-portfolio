@@ -10,7 +10,7 @@ function MobileNavBar({ pages, onClick, onClose, isOpen }) {
         <button
           onClick={onClick}
           className={`${
-            isOpen ? "hidden" : "absolute font-semibold top-3 right-3 md:hidden"
+            isOpen ? "hidden" : "absolute font-semibold top-5 right-3 md:hidden"
           } `}
         >
           <span className="text-xl">&#9776;</span>
@@ -22,7 +22,7 @@ function MobileNavBar({ pages, onClick, onClose, isOpen }) {
           <Logo position="absolute top-3 left-3" />
           <button
             onClick={onClose}
-            className="absolute font-semibold top-3 right-3  self-center"
+            className="absolute font-semibold top-5 right-3  self-center"
           >
             <span className="text-xl">&#10005;</span>
           </button>
