@@ -4,7 +4,7 @@ import { FiMapPin } from "react-icons/fi";
 
 function Contact() {
   return (
-    <section id="contact" className=" py-16 bg-[#f8f9fa] ">
+    <section id="contact" className=" py-16 px-10 bg-[#f8f9fa] ">
       <Container>
         <div className="flex flex-col items-center md:block">
           <span className="uppercase font-bold text-subheading tracking-subheading">

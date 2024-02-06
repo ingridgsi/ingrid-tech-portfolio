@@ -13,7 +13,7 @@ function MobileNavBar({ pages, onClick, onClose, isOpen }) {
             isOpen ? "hidden" : "absolute font-semibold top-3 right-3 md:hidden"
           } `}
         >
-          <span className="text-2xl">&#9776;</span>
+          <span className="text-xl">&#9776;</span>
         </button>
       </StickNavBar>
 
@@ -24,7 +24,7 @@ function MobileNavBar({ pages, onClick, onClose, isOpen }) {
             onClick={onClose}
             className="absolute font-semibold top-3 right-3  self-center"
           >
-            <span className="text-2xl">&#10005;</span>
+            <span className="text-xl">&#10005;</span>
           </button>
 
           <MenuList pages={pages} onClose={onClose} />
