@@ -24,7 +24,7 @@ function MenuList({ pages, onClose }) {
                 offset={index === 1 ? -150 : -90}
                 duration={1000}
                 onClick={onClose}
-                className="text-paragraphs text-[#555] text-xl md:text-[1.2rem] cursor-pointer font-medium hover:text-primary focus:border-b"
+                className="text-paragraphs text-[#555] text-xl md:text-[1.1rem] cursor-pointer font-medium hover:text-primary focus:border-b"
               >
                 {page.charAt(0).toUpperCase() + page.slice(1)}
               </Link>

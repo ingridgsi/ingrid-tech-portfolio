@@ -33,7 +33,7 @@ function Projects() {
           <span className="uppercase font-bold text-subheading tracking-subheading">
             Projects
           </span>
-          <h2 className="my-6 mb-4 text-headings text-center md:text-start text-headingSecondary ">
+          <h2 className="my-6 mb-7 text-headings text-center md:text-start text-headingSecondary ">
             All projects built using real world solutions and the latest stacks.
           </h2>
         </div>
@@ -56,17 +56,17 @@ function Projects() {
               </div>
 
               <div className="flex flex-col gap-6 items-center justify-center w-full py-5 px-2">
-                <h2 className="text-subheading text-center">
+                <h2 className="text-subheading text-center font-semibold ">
                   {project.projectTitle}{" "}
                 </h2>
-                <p className="text-paragraphs text-center">
+                <p className="text-paragraphs text-center text-[#555]">
                   {project.description}
                 </p>
 
                 <div className="flex gap-3 items-center justify-between">
                   {project.stacks?.map((stack, stackIndex) => (
                     <span
-                      className="flex justify-center p-[0.5rem] shadow-3xl w-[5rem] rounded-md "
+                      className="flex justify-center p-[0.5rem] shadow-3xl w-[5rem] rounded-md text-[#444] font-semibold "
                       key={stackIndex}
                     >
                       {stack.toUpperCase()}
@@ -76,7 +76,7 @@ function Projects() {
                 <div className="  mt-1 flex flex-row items-center justify-center gap-3">
                   <a
                     className="flex items-center gap-1 font-medium px-5
-                    hover:text-[#227d7d] text-paragraphs"
+                    hover:text-[#227d7d] text-paragraphs text-[#555]"
                     href={project.githubLink}
                     target="_blank"
                     rel="noreferrer"
@@ -85,7 +85,7 @@ function Projects() {
                   </a>
 
                   <a
-                    className="flex items-center gap-1 font-medium px-5 hover:text-[#227d7d]"
+                    className="flex items-center gap-1 font-medium px-5 hover:text-[#227d7d] text-[#555]"
                     href={project.liveDemoLink}
                     target="_blank"
                     rel="noreferrer"

@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="bg-primary ">
       <div className="container mx-auto py-10 sm:py-16">
-        <h3 className="text-center font-semibold md:font-medium md:text-headingTertiary text-[#fff] md:text-left">
+        <h3 className="text-center font-semibold md:font-normal md:text-headingTertiary text-[#fff] md:text-left">
           Copyright &copy; {year}. All rights are reserved.
         </h3>
       </div>
