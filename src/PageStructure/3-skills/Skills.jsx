@@ -23,7 +23,7 @@ function Skills() {
           {" "}
           Tech Stack
         </h2>
-        <ul className="flex gap-5 items-center justify-between py-16">
+        <ul className="flex gap-5 items-center justify-between py-16 px-8">
           {skillsLogos.map((logo) => (
             <li key={logo.index}>
               <img

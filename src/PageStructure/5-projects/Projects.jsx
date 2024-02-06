@@ -29,7 +29,7 @@ function Projects() {
   return (
     <section id="projects" className="mb-28 md:mb-32 ">
       <Container>
-        <div className="flex flex-col items-center md:block">
+        <div className="flex flex-col items-center md:block px-8">
           <span className="uppercase font-bold text-subheading tracking-subheading">
             Projects
           </span>
@@ -37,7 +37,7 @@ function Projects() {
             All projects built using real world solutions and the latest stacks.
           </h2>
         </div>
-        <div className=" flex flex-col gap-6 md:grid items-center">
+        <div className=" flex flex-col gap-6 md:grid items-center px-4">
           {projectsData.map((project, index) => (
             <div
               key={index}

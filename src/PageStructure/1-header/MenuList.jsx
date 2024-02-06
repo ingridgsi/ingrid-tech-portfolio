@@ -6,7 +6,7 @@ import Cta from "../../Cta";
 function MenuList({ pages, onClose }) {
   return (
     <div>
-      <ul className="flex flex-col justify-center items-center md:flex-row gap-10 ">
+      <ul className="flex flex-col justify-center items-center md:flex-row gap-10">
         {pages.map((page, index) => (
           <React.Fragment key={index}>
             {index === pages.length - 1 ? (
