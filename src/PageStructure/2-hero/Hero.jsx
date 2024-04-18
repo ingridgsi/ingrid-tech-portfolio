@@ -1,20 +1,23 @@
-import womanCoding from "../../images/woman-coding.png";
+import ingrid from "../../images/ingrid.jpg";
 import Cta from "../../Cta";
 import Container from "../../Container";
 
 function Hero() {
   return (
-    <section id="hero" className=" bg-[#f8f9fa] py-16 ">
+    <section
+      id="hero"
+      className=" bg-[#f8f9fa] h-[60rem] py-10 flex flex-col items-center justify-center "
+    >
       <Container>
-        <div className="flex flex-col gap-10  md:grid grid-cols-2 items-center ">
-          <div className="flex flex-col items-center md:items-start px-10 ">
+        <div className="flex flex-col gap-10  md:grid grid-cols-2 items-center justify-center">
+          <div className="flex flex-col items-center md:items-start lg:px-10 ">
             <h1
               className=" text-[2.5rem] text-headings font-headings 
           tracking-headings   pb-4 mb-2 "
             >
               Web Developer
             </h1>
-            <p className="leading-defaultLine text-paragraphs mb-8 text-center md:text-start">
+            <p className="leading-defaultLine  mb-8 text-center md:text-start md:text-[1rem] lg:text-[1.4rem] text-paragraphs">
               Hey, I&apos;m Ingrid Guimarães, a web developer and proud woman in
               tech. I love coding and creating digital experiences that speak to
               all. Join me in the mission of shaping a tech world where everyone
@@ -24,11 +27,11 @@ function Hero() {
             <Cta ctaText={"Saiba mais"} to={"contact"} />
           </div>
 
-          <div>
+          <div className="flex items-center justify-center">
             <img
-              src={womanCoding}
+              src={ingrid}
               alt="Woman coding"
-              className="rounded-full w-full h-auto px-5 py-5"
+              className="rounded-[2rem] w-[256px] h-[256px]  shadow-3xl"
             />
           </div>
         </div>

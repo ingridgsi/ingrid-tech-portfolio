@@ -60,6 +60,10 @@ export default {
         subheading: "#227d7d",
         paragraphs: "#333",
       },
+
+      backgroundImage: {
+        toDoApp: "url(src/images/fastPizza.jpg)",
+      },
     },
   },
   plugins: [
@@ -67,6 +71,18 @@ export default {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`rubik:300,400,500,700`],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Great Vibes`,
+            variants: [`400`], // You can include additional variants if needed
+          },
+        ],
         display: "swap",
       },
     },

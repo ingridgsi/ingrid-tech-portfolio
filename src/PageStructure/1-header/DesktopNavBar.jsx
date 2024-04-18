@@ -1,6 +1,5 @@
 import MenuList from "./MenuList";
 import Logo from "./Logo";
-import { useEffect, useState } from "react";
 import StickNavBar from "./StickNavBar";
 
 function DesktopNavBar({ pages }) {

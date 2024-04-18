@@ -25,7 +25,7 @@ function MobileNavBar({ pages, onClick, onClose, isOpen }) {
           className={`${
             isOpen
               ? "hidden"
-              : "absolute font-semibold text-[#555] top-5 right-5 md:hidden"
+              : "absolute font-semibold text-[#555] top-5 right-5 md:hidden  hover:text-primary"
           } `}
         >
           <span className="text-xl">&#9776;</span>

@@ -1,7 +1,9 @@
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import omnifoodProject from "../../images/omnifood.jpg";
-import cloudBrigadeProject from "../../images/cloudBrigade.png";
 import Container from "../../Container";
+import toDoApp from "../../images/toDoApp.jpg";
+import wildOasis from "../../images/wildOasis.jpg";
+import fastPizza from "../../images/fastPizza.jpg";
 
 function Projects() {
   const projectsData = [
@@ -9,48 +11,69 @@ function Projects() {
       projectImage: omnifoodProject,
       projectTitle: "Omnifood - Never cook again!",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. dsfadfasdfasdfsfas fdafdsfas sdfsafsadf asdf adfdfdfsaf  adsf ddf",
+        "Omnifood is a fictional tech company that aims to help people maintain a healthy diet. This landing page primarily utilizes Flexbox and CSS grid, following best practices in web design, to create a dynamic and accessible user interface. Media queries have been implemented to ensure responsiveness across various screen sizes and devices.",
       githubLink: "https://github.com/ingridgsi/omnifood-landing-page.git",
       liveDemoLink: "https://omnifood-healthydiet.netlify.app/",
-      stacks: ["html", "css", "JS"],
+      stacks: ["html", "css", "JavaScript"],
     },
     {
-      projectImage: cloudBrigadeProject,
-      projectTitle: "CloudBrigade | Multicloud Services",
+      projectImage: fastPizza,
+      projectTitle: "Fast React Pizza",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. dsfadfasdfasdfsfas fdafdsfas sdfsafsadf asdf adfdfdfsaf  adsf ddf",
-      githubLink: "https://github.com/ingridgsi/cloud-brigade.git",
-      liveDemoLink: "https://cloudbrigade.ingridtech.com/",
-      stacks: ["html", "css", "JS"],
+        "A pizza ordering app where users can order their favorite pizza without authentication. In this project, orders are made by sending a POST request with the order data to the API. The API responds with a unique order ID which is then display to the user.",
+      githubLink: "https://github.com/ingridgsi/fast-react-pizza.git",
+      liveDemoLink: "https://fastpizzareactfast.netlify.app",
+      stacks: [
+        "React",
+        "Tailwind",
+        "API Geocoding",
+        "React Router",
+        "Redux Toolkit",
+      ],
     },
-    // Add more project data as needed
+    {
+      projectImage: wildOasis,
+      projectTitle: "The Wild Oasis",
+      description:
+        "A user-friendly hotel management application tailored to streamline bookings operations. The application provide statistics to efficiently managing cabins, users, and bookings. It has a integrated authentication and database storage functionalities and dark mode.",
+      githubLink: "https://github.com/ingridgsi/the-wild-oasis.git",
+      liveDemoLink: "https://dynamic-dragon-720e6c.netlify.app",
+      stacks: ["React", "Styled-components", "Supabase", "React Router"],
+    },
+
+    {
+      projectImage: toDoApp,
+      projectTitle: "ToDoApp",
+      description:
+        "A task management app where users can insert tasks to do, edit, delete and filter. It's possible to set a timer to focus, check progress based on the stats and get an advice from an API to burst their motivation.",
+      githubLink: "https://github.com/ingridgsi/toDo-app.git",
+      liveDemoLink: "https://todo.ingridtech.com",
+      stacks: ["React", "Tailwind", "API", "Redux Toolkit", "Local Storage"],
+    },
   ];
 
   return (
     <section id="projects" className="mb-28 md:mb-32 ">
       <Container>
-        <div className="flex flex-col items-center md:block px-8">
+        <div className="flex flex-col items-center  md:block px-8">
           <span className="uppercase font-bold text-subheading tracking-subheading">
             Projects
           </span>
           <h2 className="my-6 mb-7 text-headings text-center md:text-start text-headingSecondary ">
-            All projects built using real world solutions and the latest stacks.
+            Self learning projects built using real world solutions.
           </h2>
         </div>
-        <div className=" flex flex-col gap-6 md:grid items-center px-4">
+        <div className=" flex flex-col flex-grow gap-8 md:grid  items-center px-4">
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className="  rounded-[10px] h-[37rem]  w-full flex flex-col p-4  shadow-3xl md:flex-row md:h-[18rem] lg:h-[25rem] 2xl:h-[29.5rem]"
+              className="  rounded-[10px]  w-full flex flex-col p-4  shadow-3xl lg:grid grid-cols-2  gap-3"
             >
-              <div className=" shadow-3xl relative overflow-hidden w-full rounded-md ">
+              <div className="  shadow-3xl relative overflow-hidden w-full rounded-md ">
                 <a href={project.liveDemoLink} target="_blank" rel="noreferrer">
                   <img
                     src={project.projectImage}
-                    alt=""
-                    className="
-                    hover:translate-y-[-83%]
-                    transition duration-8000 ease-in-out z-[-10] "
+                    className="min-w-full max-h-full"
                   />
                 </a>
               </div>
@@ -66,7 +89,7 @@ function Projects() {
                 <div className="flex gap-3 items-center justify-between">
                   {project.stacks?.map((stack, stackIndex) => (
                     <span
-                      className="flex justify-center p-[0.5rem] shadow-3xl w-[5rem] rounded-md text-[#444] font-semibold "
+                      className="flex justify-center items-center p-[0.5rem] shadow-3xl w-auto  rounded-md text-[#444] font-semibold text-center"
                       key={stackIndex}
                     >
                       {stack.toUpperCase()}
