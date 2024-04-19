@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className=" bg-[#f8f9fa] h-[60rem] py-10 flex flex-col items-center justify-center "
+      className=" bg-[#f8f9fa] h-[55rem] sm:h-[60rem] flex flex-col items-center justify-center "
     >
       <Container>
         <div className="flex flex-col gap-10  md:grid grid-cols-2 items-center justify-center">
@@ -17,7 +17,7 @@ function Hero() {
             >
               Web Developer
             </h1>
-            <p className="leading-defaultLine  mb-8 text-center md:text-start md:text-[1rem] lg:text-[1.4rem] text-paragraphs">
+            <p className="leading-defaultLine  mb-12 text-center md:text-start md:text-[1rem] lg:text-[1.4rem] text-paragraphs">
               Hey, I&apos;m Ingrid Guimarães, a web developer and proud woman in
               tech. I love coding and creating digital experiences that speak to
               all. Join me in the mission of shaping a tech world where everyone
@@ -27,7 +27,7 @@ function Hero() {
             <Cta ctaText={"Saiba mais"} to={"contact"} />
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-7">
             <img
               src={ingrid}
               alt="Woman coding"

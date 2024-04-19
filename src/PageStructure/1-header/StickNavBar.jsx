@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 
 function StickNavBar({ children, type }) {
   const stick = "fixed  top-0 left-0 w-full  bg-[#fff] shadow-3xl p-5 ";
-  const desktop = "hidden  h-20 md:flex justify-between items-center p-10 z-10";
+  const desktop =
+    "hidden  h-[6rem] md:flex justify-between items-center p-10 z-10";
   const mobile = "h-[4.7rem] z-10 md:hidden flex item-center justify-center";
 
   const styles = {
@@ -30,7 +31,7 @@ function StickNavBar({ children, type }) {
     <nav
       className={`${
         isSticky ? styles[type + "Stick"] : styles[type + "Normal"]
-      } h-[6.5rem] `}
+      } `}
     >
       {children}
     </nav>
