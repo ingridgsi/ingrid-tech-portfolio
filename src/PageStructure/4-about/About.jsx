@@ -19,7 +19,7 @@ function About() {
             As an enthusiastic and curious woman, I have developed a passion for
             the Tech field after working as an IT recruiter. My experience
             exposed me to the dynamic intersection of technology and human
-            potential, sparking a strong interest in software development{" "}
+            potential, sparking a strong interest in software development.{" "}
             <br></br>
             <br></br> Transitioning from a role in recruitment to one in
             development, I bring a unique blend of people skills and technical
@@ -27,12 +27,12 @@ function About() {
             experiences that speak to all. <br></br> <br></br>
             Currently I&apos;ve been studying and developing web project using
             React and its third party libraries, such as React Router, Redux,
-            Context API, chakra, React Hook Form and Tailwind.
+            Context API, Chakra, React Hook Form and Tailwind.
           </p>
           <img
             src={coding}
             alt="Laptop with code on the screen"
-            className="rounded-[2rem] w-[500px] h-[350px]  shadow-3xl"
+            className="rounded-[2rem] w-[356px] h-[260px] shadow-3xl "
           />
         </div>
       </Container>

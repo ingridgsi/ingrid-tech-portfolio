@@ -35,7 +35,7 @@ function Projects() {
       projectImage: wildOasis,
       projectTitle: "The Wild Oasis",
       description:
-        "A user-friendly hotel management application tailored to streamline bookings operations. The application provide statistics to efficiently managing cabins, users, and bookings. It has a integrated authentication and database storage functionalities and dark mode.",
+        "An intuitive hotel management application designed to optimize booking processes. The application offers statistical insights to effectively oversee cabins, users, and bookings. It includes integrated authentication and database storage capabilities, along with a dark mode for user preference.",
       githubLink: "https://github.com/ingridgsi/the-wild-oasis.git",
       liveDemoLink: "https://dynamic-dragon-720e6c.netlify.app",
       stacks: ["React", "Styled-components", "Supabase", "React Router"],
@@ -45,7 +45,7 @@ function Projects() {
       projectImage: toDoApp,
       projectTitle: "ToDoApp",
       description:
-        "A task management app where users can insert tasks to do, edit, delete and filter. It's possible to set a timer to focus, check progress based on the stats and get an advice from an API to burst their motivation.",
+        "A task management app where users can insert tasks to do, edit, delete and filter. It's possible to set a timer to focus, switch to dark mode, check progress based on the stats and get an advice from an API.",
       githubLink: "https://github.com/ingridgsi/toDo-app.git",
       liveDemoLink: "https://todo.ingridtech.com",
       stacks: ["React", "Tailwind", "API", "Redux Toolkit", "Local Storage"],
@@ -71,10 +71,7 @@ function Projects() {
             >
               <div className="  shadow-3xl relative overflow-hidden w-full rounded-md ">
                 <a href={project.liveDemoLink} target="_blank" rel="noreferrer">
-                  <img
-                    src={project.projectImage}
-                    className="min-w-full max-h-full"
-                  />
+                  <img src={project.projectImage} className="" />
                 </a>
               </div>
 
@@ -86,7 +83,7 @@ function Projects() {
                   {project.description}
                 </p>
 
-                <div className="flex gap-3 items-center justify-between">
+                {/* <div className="flex gap-3 items-center justify-between">
                   {project.stacks?.map((stack, stackIndex) => (
                     <span
                       className="flex justify-center items-center p-[0.5rem] shadow-3xl w-auto  rounded-md text-[#444] font-semibold text-center"
@@ -95,7 +92,7 @@ function Projects() {
                       {stack.toUpperCase()}
                     </span>
                   ))}
-                </div>
+                </div> */}
                 <div className="  mt-1 flex flex-row items-center justify-center gap-3">
                   <a
                     className="flex items-center gap-1 font-medium px-5

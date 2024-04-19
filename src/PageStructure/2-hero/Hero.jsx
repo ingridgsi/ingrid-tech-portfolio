@@ -6,11 +6,11 @@ function Hero() {
   return (
     <section
       id="hero"
-      className=" bg-[#f8f9fa] h-[55rem] sm:h-[60rem] flex flex-col items-center justify-center "
+      className=" bg-[#f8f9fa] h-[55rem] sm:h-[60rem] flex flex-col items-center justify-center md:pl-8 "
     >
       <Container>
-        <div className="flex flex-col gap-10  md:grid grid-cols-3 items-center justify-center">
-          <div className="col-span-2 flex flex-col items-center md:items-start  ">
+        <div className="flex flex-col gap-5 md:grid grid-cols-2 lg:grid-cols-3  items-center justify-center">
+          <div className="lg:col-span-2 flex flex-col items-center md:items-start  ">
             <h1
               className=" text-[2.5rem] text-headings font-headings 
           tracking-headings   pb-4 mb-2 "
