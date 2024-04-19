@@ -14,7 +14,7 @@ function About() {
             A woman in tech who&apos;s up to crafting cool things online.
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-between mt-6 gap-10 px-8">
+        <div className="flex flex-col lg:flex-row items-center justify-between mt-6 gap-10 md:px-8">
           <p className="text-paragraphs text-[1.2rem] text-center md:text-start my-4 ">
             As an enthusiastic and curious woman, I have developed a passion for
             the Tech field after working as an IT recruiter. My experience
