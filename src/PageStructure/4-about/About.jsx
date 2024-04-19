@@ -17,11 +17,14 @@ function About() {
         <div className="flex flex-col lg:flex-row items-center justify-between mt-6 gap-10 px-8">
           <p className="text-paragraphs text-[1.2rem] text-center md:text-start my-4 ">
             As an enthusiastic and curious woman, I have developed a passion for
-            the Tech field after working as an IT recruiter. <br></br>
-            <br></br>My time as a recruiter strengthened my ability to
-            understand diverse perspectives and effectively communicate complex
-            ideas, skills which I now apply to crafting intuitive and
-            user-friendly applications. <br></br> <br></br>
+            the Tech field after working as an IT recruiter. My experience
+            exposed me to the dynamic intersection of technology and human
+            potential, sparking a strong interest in software development{" "}
+            <br></br>
+            <br></br> Transitioning from a role in recruitment to one in
+            development, I bring a unique blend of people skills and technical
+            proficiency to the table, which helps me to create digital
+            experiences that speak to all. <br></br> <br></br>
             Currently I&apos;ve been studying and developing web project using
             React and its third party libraries, such as React Router, Redux,
             Context API, chakra, React Hook Form and Tailwind.
@@ -29,7 +32,7 @@ function About() {
           <img
             src={coding}
             alt="Laptop with code on the screen"
-            className="rounded-[2rem] w-[400px] h-[256px]  shadow-3xl"
+            className="rounded-[2rem] w-[500px] h-[350px]  shadow-3xl"
           />
         </div>
       </Container>

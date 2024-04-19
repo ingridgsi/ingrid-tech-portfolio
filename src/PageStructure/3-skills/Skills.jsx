@@ -17,16 +17,16 @@ function Skills() {
     { src: "https://skillicons.dev/icons?i=react", alt: "React" },
     { src: "https://skillicons.dev/icons?i=redux", alt: "Redux" },
     { src: "https://skillicons.dev/icons?i=next", alt: "Next.js" },
+    { src: "https://skillicons.dev/icons?i=supabase", alt: "Supabase" },
     { src: "https://skillicons.dev/icons?i=git", alt: "Git" },
     { src: "https://skillicons.dev/icons?i=github", alt: "GitHub" },
-    { src: "https://skillicons.dev/icons?i=supabase", alt: "Supabase" },
     // { src: ghLogo, alt: "GitHub" },
     // { src: reduxLogo, alt: "Redux" },
     // { src: styledLogo, alt: "Styled Components" },
   ];
 
   return (
-    <section id="skills" className="mt-16 ">
+    <section id="skills" className="mt-20 mb-10 ">
       <Container>
         <h2 className="uppercase font-bold text-center text-subheading tracking-subheading">
           {" "}

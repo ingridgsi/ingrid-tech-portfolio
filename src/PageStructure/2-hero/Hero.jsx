@@ -19,9 +19,9 @@ function Hero() {
             </h1>
             <p className="leading-defaultLine  mb-12 text-center md:text-start md:text-[1.25rem] lg:text-[1.4rem] text-paragraphs">
               Hey, I&apos;m Ingrid Guimarães, a web developer and proud woman in
-              tech. I love coding and creating digital experiences that speak to
-              all. Join me in the mission of shaping a tech world where everyone
-              feels at home. Enjoy exploring my portfolio!
+              tech. My passion lies in coding, continuous learning, and crafting
+              web applications. Feel free to dive into my portfolio and explore
+              my projects!
               {/* Excited to embark on this tech journey together! */}
             </p>
             <Cta ctaText={"Saiba mais"} to={"contact"} />
