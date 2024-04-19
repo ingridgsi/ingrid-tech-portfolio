@@ -33,7 +33,7 @@ function Skills() {
           Tech Stack
         </h2>
 
-        <ul className=" grid grid-cols-4 place-items-center lg:grid-cols-5 gap-8 items-center justify-between py-16 px-8  ">
+        <ul className=" grid grid-cols-4 place-items-center lg:grid-cols-5 gap-8 items-center justify-between py-16   ">
           {skillsLogos.map((logo, index) => (
             <li
               key={index}

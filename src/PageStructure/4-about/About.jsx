@@ -32,7 +32,7 @@ function About() {
           <img
             src={coding}
             alt="Laptop with code on the screen"
-            className="rounded-[2rem] w-[356px] h-[260px] shadow-3xl "
+            className="rounded-[2rem] md:w-[356px] md:h-[260px] shadow-3xl "
           />
         </div>
       </Container>
