@@ -51,10 +51,8 @@ function Skills() {
                 
               }`}
             >
-              <div>
+              <div width="58px" height="58px">
                 <img
-                  width="58px"
-                  height="58px"
                   src={logo.src}
                   alt={logo.index}
                   className="hover:translate-y-[-8px] transition-all duration-300 ease-in-out cursor-pointer"

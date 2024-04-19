@@ -5,7 +5,7 @@ function About() {
   return (
     <section id="about" className=" py-16 mb-16 md:mb-20 bg-[#f8f9fa]">
       <Container>
-        <div className="flex flex-col items-center md:block px-8">
+        <div className="flex flex-col items-center md:block md:px-8">
           <h3 className="uppercase font-bold text-subheading tracking-subheading">
             About me
           </h3>
