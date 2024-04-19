@@ -16,7 +16,7 @@ function Skills() {
     { src: "https://skillicons.dev/icons?i=js", alt: "JavaScript" },
     { src: "https://skillicons.dev/icons?i=react", alt: "React" },
     { src: "https://skillicons.dev/icons?i=redux", alt: "Redux" },
-    { src: "https://skillicons.dev/icons?i=next", alt: "Nextjs" },
+    { src: "https://skillicons.dev/icons?i=next", alt: "Next.js" },
     { src: "https://skillicons.dev/icons?i=git", alt: "Git" },
     { src: "https://skillicons.dev/icons?i=github", alt: "GitHub" },
     { src: "https://skillicons.dev/icons?i=supabase", alt: "Supabase" },
@@ -26,22 +26,44 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="my-16 md:my-32">
+    <section id="skills" className="mt-16 ">
       <Container>
         <h2 className="uppercase font-bold text-center text-subheading tracking-subheading">
           {" "}
           Tech Stack
         </h2>
-        <ul className="flex  gap-5 items-center justify-between py-16 px-8">
+
+        <ul className=" grid grid-cols-4 place-items-center lg:grid-cols-5 gap-8 items-center justify-between py-16 px-8  ">
           {skillsLogos.map((logo, index) => (
-            <li key={index}>
-              <img
-                src={logo.src}
-                alt={logo.index}
-                width="58px"
-                height="58px"
-                className="hover:translate-y-[-8px] transition-all duration-300 ease-in-out cursor-pointer"
-              />
+            <li
+              key={index}
+              className={`flex flex-col items-center justify-between gap-1 
+                ${
+                  index >= skillsLogos.length - 2
+                    ? "col-start-2 lg:col-start-4"
+                    : ""
+                } 
+                ${
+                  index >= skillsLogos.length - 1
+                    ? "col-start-3 lg:col-start-5"
+                    : ""
+                } 
+                
+              }`}
+            >
+              <div>
+                <img
+                  width="58px"
+                  height="58px"
+                  src={logo.src}
+                  alt={logo.index}
+                  className="hover:translate-y-[-8px] transition-all duration-300 ease-in-out cursor-pointer"
+                />
+              </div>
+
+              <div>
+                <span className="text-paragraphs">{logo.alt}</span>
+              </div>
             </li>
           ))}
         </ul>
@@ -57,6 +79,7 @@ function Skills() {
               height="58px"
               className="hover:translate-y-[-8px] transition-all duration-300 ease-in-out cursor-pointer"
             /> */
+  //
 }
 
 export default Skills;
