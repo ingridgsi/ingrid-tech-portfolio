@@ -10,16 +10,48 @@ import Container from "../../Container";
 
 function Skills() {
   const skillsLogos = [
-    { src: "https://skillicons.dev/icons?i=html", alt: "HTML" },
-    { src: "https://skillicons.dev/icons?i=css", alt: "CSS" },
-    { src: "https://skillicons.dev/icons?i=tailwind", alt: "Tailwind" },
-    { src: "https://skillicons.dev/icons?i=js", alt: "JavaScript" },
-    { src: "https://skillicons.dev/icons?i=react", alt: "React" },
-    { src: "https://skillicons.dev/icons?i=redux", alt: "Redux" },
-    { src: "https://skillicons.dev/icons?i=next", alt: "Next.js" },
-    { src: "https://skillicons.dev/icons?i=supabase", alt: "Supabase" },
-    { src: "https://skillicons.dev/icons?i=git", alt: "Git" },
-    { src: "https://skillicons.dev/icons?i=github", alt: "GitHub" },
+    {
+      src: "https://skillicons.dev/icons?i=html",
+      name: "HTML",
+      alt: "HTML icon",
+    },
+    { src: "https://skillicons.dev/icons?i=css", name: "CSS", alt: "CSS icon" },
+    {
+      src: "https://skillicons.dev/icons?i=tailwind",
+      name: "Tailwind",
+      alt: "Tailwind icon",
+    },
+    {
+      src: "https://skillicons.dev/icons?i=js",
+      name: "JavaScript",
+      alt: "JavaScript icon",
+    },
+    {
+      src: "https://skillicons.dev/icons?i=react",
+      name: "React",
+      alt: "React icon",
+    },
+    {
+      src: "https://skillicons.dev/icons?i=redux",
+      name: "Redux",
+      alt: "Redux icon",
+    },
+    {
+      src: "https://skillicons.dev/icons?i=next",
+      name: "Next.js",
+      alt: "Next.js icon",
+    },
+    {
+      src: "https://skillicons.dev/icons?i=supabase",
+      name: "Supabase",
+      alt: "Supabase icon",
+    },
+    { src: "https://skillicons.dev/icons?i=git", name: "Git", alt: "Git icon" },
+    {
+      src: "https://skillicons.dev/icons?i=github",
+      name: "GitHub",
+      alt: "GitHub icon",
+    },
     // { src: ghLogo, alt: "GitHub" },
     // { src: reduxLogo, alt: "Redux" },
     // { src: styledLogo, alt: "Styled Components" },
@@ -54,13 +86,13 @@ function Skills() {
               <div width="58px" height="58px">
                 <img
                   src={logo.src}
-                  alt={logo.index}
+                  alt={logo.alt}
                   className="hover:translate-y-[-8px] transition-all duration-300 ease-in-out cursor-pointer"
                 />
               </div>
 
               <div>
-                <span className="text-paragraphs">{logo.alt}</span>
+                <span className="text-paragraphs">{logo.name}</span>
               </div>
             </li>
           ))}

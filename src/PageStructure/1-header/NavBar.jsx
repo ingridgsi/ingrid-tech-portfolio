@@ -4,7 +4,7 @@ import MobileNavBar from "./MobileNavBar";
 import Cta from "../../Cta";
 
 function NavBar() {
-  const pages = ["hero", "skills", "about", "projects", "contact"];
+  const pages = ["home", "skills", "about", "projects", "contact"];
 
   const [isOpen, setIsOpen] = useState("");
 

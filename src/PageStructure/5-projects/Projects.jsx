@@ -9,6 +9,7 @@ function Projects() {
   const projectsData = [
     {
       projectImage: omnifoodProject,
+      projectAlt: "Omnifood website home image",
       projectTitle: "Omnifood - Never cook again!",
       description:
         "Omnifood is a fictional tech company that aims to help people maintain a healthy diet. This landing page primarily utilizes Flexbox and CSS grid, following best practices in web design, to create a dynamic and accessible user interface. Media queries have been implemented to ensure responsiveness across various screen sizes and devices.",
@@ -18,6 +19,7 @@ function Projects() {
     },
     {
       projectImage: fastPizza,
+      projectAlt: "Fast React Pizza website home image",
       projectTitle: "Fast React Pizza",
       description:
         "A pizza ordering app where users can order their favorite pizza without authentication. In this project, orders are made by sending a POST request with the order data to the API. The API responds with a unique order ID which is then display to the user.",
@@ -33,6 +35,7 @@ function Projects() {
     },
     {
       projectImage: wildOasis,
+      projectAlt: "The Wild Oasis website home image",
       projectTitle: "The Wild Oasis",
       description:
         "An intuitive hotel management application designed to optimize booking processes. The application offers statistical insights to effectively oversee cabins, users, and bookings. It includes integrated authentication and database storage capabilities, along with a dark mode for user preference.",
@@ -43,6 +46,7 @@ function Projects() {
 
     {
       projectImage: toDoApp,
+      projectAlt: "ToDoApp website home image",
       projectTitle: "ToDoApp",
       description:
         "A task management app where users can insert tasks to do, edit, delete and filter. It's possible to set a timer to focus, switch to dark mode, check progress based on the stats and get an advice from an API.",
@@ -71,7 +75,11 @@ function Projects() {
             >
               <div className="  shadow-3xl relative overflow-hidden w-full rounded-md ">
                 <a href={project.liveDemoLink} target="_blank" rel="noreferrer">
-                  <img src={project.projectImage} className="" />
+                  <img
+                    src={project.projectImage}
+                    className=""
+                    alt={project.projectAlt}
+                  />
                 </a>
               </div>
 

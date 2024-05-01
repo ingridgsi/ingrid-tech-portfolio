@@ -5,7 +5,7 @@ import Container from "../../Container";
 function Hero() {
   return (
     <section
-      id="hero"
+      id="home"
       className=" bg-[#f8f9fa] h-[55rem] sm:h-[60rem] flex flex-col items-center justify-center md:pl-8 "
     >
       <Container>
@@ -30,7 +30,7 @@ function Hero() {
           <div className="flex items-center justify-center mt-7">
             <img
               src={ingrid}
-              alt="Woman coding"
+              alt="Ingrid's image"
               className="rounded-[2rem] w-[256px] h-[256px]  shadow-3xl"
             />
           </div>
