@@ -7,7 +7,7 @@ function MenuList({ pages, onClose }) {
     <div>
       <ul className="flex flex-col justify-center items-center md:flex-row gap-10">
         {pages.map((page, index) => (
-          <React.Fragment key={index}>
+          <li key={index}>
             {index === pages.length - 1 ? (
               <Cta
                 to={pages[pages.length - 1]}
@@ -28,7 +28,7 @@ function MenuList({ pages, onClose }) {
                 {page.charAt(0).toUpperCase() + page.slice(1)}
               </Link>
             )}
-          </React.Fragment>
+          </li>
         ))}
       </ul>
     </div>
