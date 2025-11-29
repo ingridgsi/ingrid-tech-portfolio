@@ -24,7 +24,7 @@ function Contact() {
                 href="mailto: isg.ingridguimaraes@gmail.com"
                 className="hover:text-[#227d7d] cursor-pointer not-italic text-paragraphs"
               >
-                isg.ingridguimaraes@gmail.com
+                ingridtech@gmail.com
               </a>
             </address>
           </div>
