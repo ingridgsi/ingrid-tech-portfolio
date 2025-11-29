@@ -27,13 +27,7 @@ function Hero() {
             <Cta ctaText={"Saiba mais"} to={"contact"} />
           </div>
 
-          <div className="flex items-center justify-center mt-7">
-            <img
-              src={ingrid}
-              alt="Ingrid's image"
-              className="rounded-[2rem] w-[256px] h-[256px]  shadow-3xl"
-            />
-          </div>
+          
         </div>
       </Container>
     </section>
